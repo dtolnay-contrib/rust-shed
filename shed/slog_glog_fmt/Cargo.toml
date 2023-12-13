@@ -2,12 +2,12 @@
 
 [package]
 name = "slog_glog_fmt"
-version = "0.1.0"
+version = "0.1.5"
 authors = ["Facebook <opensource+rust-shed@fb.com>"]
 edition = "2021"
 description = "slog Drain for glog-formatted logs"
 readme = "../../README.md"
-repository = "https://github.com/facebookexperimental/rust-shed/"
+repository = "https://github.com/facebookexperimental/rust-shed"
 license = "MIT OR Apache-2.0"
 
 [[bin]]
@@ -17,7 +17,7 @@ path = "example/main.rs"
 [dependencies]
 anyhow = "1.0.75"
 chrono = { version = "0.4", features = ["clock", "serde", "std"], default-features = false }
-failure_ext = { version = "0.1.0", path = "../failure_ext" }
+fb_failure_ext = { version = "0.2", path = "../failure_ext" }
 hostname = "0.3"
 itertools = "0.11.0"
 slog = { version = "2.7", features = ["max_level_trace", "nested-values"] }

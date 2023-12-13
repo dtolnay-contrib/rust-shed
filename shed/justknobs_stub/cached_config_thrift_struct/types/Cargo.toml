@@ -6,7 +6,7 @@ version = "0.1.0"
 authors = ["Facebook <opensource+rust-shed@fb.com>"]
 edition = "2021"
 readme = "../../../../README.md"
-repository = "https://github.com/facebookexperimental/rust-shed/"
+repository = "https://github.com/facebookexperimental/rust-shed"
 license = "MIT OR Apache-2.0"
 build = "thrift_build.rs"
 
@@ -17,8 +17,8 @@ doctest = false
 
 [dependencies]
 anyhow = "1.0.75"
-codegen_includer_proc_macro = { version = "0.1.0", path = "../../../codegen_includer_proc_macro" }
 fbthrift = { version = "0.0.1+unstable", git = "https://github.com/facebook/fbthrift.git", branch = "main" }
+fbthrift_codegen_includer_proc_macro = { version = "0.1.0", path = "../../../codegen_includer_proc_macro" }
 futures = { version = "0.3.28", features = ["async-await", "compat"] }
 once_cell = "1.12"
 ref-cast = "1.0.18"
@@ -27,7 +27,7 @@ serde_derive = "1.0.185"
 thiserror = "1.0.49"
 
 [build-dependencies]
-thrift_compiler = { version = "0.1.0", path = "../../../thrift_compiler" }
+fbthrift_compiler = { version = "0.1.0", path = "../../../thrift_compiler" }
 
 [features]
 default = ["thrift_library_unittests_disabled"]

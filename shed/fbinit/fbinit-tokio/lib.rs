@@ -7,7 +7,7 @@
  * of this source tree.
  */
 
-use futures::Future;
+use std::future::Future;
 
 pub fn tokio_test<F>(f: F) -> <F as Future>::Output
 where
